@@ -9,7 +9,6 @@ import {AiOutlineMenu, AiOutlineClose} from 'react-icons/ai'
 function Navbar() {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
-    const sidebarRef = useRef<HTMLDivElement>();
 
     const handleNav = () => {
     setNav(!nav);
