@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: "Monument";
+  src: url("../public/fonts/MonumetExtended/MonumentExtended-Regular.otf");
+}
+
+@font-face {
+  font-family: "Monument-bold";
+  src: url("../public/fonts/MonumetExtended/MonumentExtended-Ultrabold.otf");
+}
+
+@font-face {
+  font-family: "RedHat Display Regular";
+  src: url("../public/fonts/RedHatDisplay/RedHatDisplay-Regular.otf");
+}
+
+@font-face {
+  font-family: "RedHat Display Semibold";
+  src: url("../public/fonts/RedHatDisplay/RedHatDisplay-Medium.otf");
+}
+
+@font-face {
+  font-family: "RedHat-Display Bold";
+  src: url("../public/fonts/RedHatDisplay/RedHatDisplay-Bold.otf");
+}
