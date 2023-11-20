@@ -7,6 +7,14 @@ const config: Config = {
     "./app/**/*.{js,ts,jsx,tsx,mdx}",
   ],
   theme: {
+    screens: {
+      xs: "420px",
+      sm: "640px",
+      md: "768px",
+      lg: "1024px",
+      xl: "1280px",
+      "2xl": "1536px",
+    },
     extend: {
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
@@ -26,19 +34,19 @@ const config: Config = {
       keyframes: {
         blob: {
           "0%": {
-            transform: "rotate(45deg) scale(1)",
+            transform: "rotate(-45deg) scale(1)",
           },
           "25%": {
-            transform: "rotate(45deg) scale(1.06)",
+            transform: "rotate(-45deg) scale(1.06)",
           },
           "50%": {
-            transform: "rotate(45deg) scale(1.1)",
+            transform: "rotate(-45deg) scale(1.1)",
           },
           "75%": {
-            transform: "rotate(45deg) scale(1.06)",
+            transform: "rotate(-45deg) scale(1.06)",
           },
           "100%": {
-            transform: "rotate(45deg) scale(1)",
+            transform: "rotate(-45deg) scale(1)",
           },
         },
       },

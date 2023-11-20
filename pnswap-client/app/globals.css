@@ -26,3 +26,7 @@
   font-family: "RedHat-Display Bold";
   src: url("../public/fonts/RedHatDisplay/RedHatDisplay-Bold.otf");
 }
+
+.xsl {
+  @apply max-[421px]:h-screen max-[421px]:overflow-x-auto;
+}

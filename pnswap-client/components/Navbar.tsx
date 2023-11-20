@@ -27,17 +27,18 @@ function Navbar() {
 
   return (
     <div className={shadow ? 'h-20 z-[999] top-0 text-white backdrop-blur-xl fixed w-full flex items-center justify-between shadow-2xl transition-all' : 'h-20 z-[999] top-0 text-white backdrop-blur-xl fixed w-full flex items-center justify-between'}>
-         <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Link href="/">
-          <Image
-            className="cursor-pointer"
-            src={LogoImg}
-            alt="/"
-            width={100}
-            height={50}
-          />
-        </Link>
-        <div>
+      <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+        <div className='flex w-full h-full justify-between items-center'>
+          <div className='flex w-full items-center'> 
+          <Link href="/">
+            <Image
+              className="cursor-pointer"
+              src={LogoImg}
+              alt="/"
+              width={100}
+              height={50}
+            />
+          </Link>
           <ul className="hidden items-center justify-center md:flex">
             <Link href="/">
               <li className="ml-10 motion-safe:transition-ease motion-safe:duration-100 text-sm  max-[900px]:text-xs max-[900px]:ml-6 font-monument uppercase hover:border-b-4 border-[#88fcaf]">About</li>
@@ -59,22 +60,25 @@ function Navbar() {
               </li>
             </Link>
           </ul>
-          <div onClick={handleNav} className="md:hidden rounded-md shadow-lg text-gray-900 bg-[#88fcaf] shadow-[#17181e] p-3 cursor-pointer">
+          </div>          
+          <div onClick={handleNav} className="md:hidden right-0 rounded-md shadow-lg text-gray-900 bg-[#88fcaf] shadow-[#17181e] p-3 cursor-pointer">
             <AiOutlineMenu size={25} />
           </div>
+          <div>
         </div>
-          <div className="md:flex hidden justify-center items-center gap-6 font-monument ">
-            <button className="hover:text-[#88fcaf] max-[900px]:text-xs text-center transition duration-100">
-                <Link href="/sign-in">
-                    Sign In
-                </Link>
-            </button>
-            <button className='bg-[#88fcaf]   max-[900px]:text-xs hover:bg-transparent motion-safe:transition-ease motion-safe:duration-200 border-[#88fcaf] border hover:p-1.75 hover:text-[#88fcaf] text-[#17181e] py-2 px-4 rounded-md'>
-                <Link className='w-full h-full' href="/signup">
-                    Signup
-                </Link>
-            </button>
-          </div>
+      </div>
+      <div className="md:flex hidden justify-center items-center gap-6 font-monument ">
+          <button className="hover:text-[#88fcaf] flex items-center transition duration-100">
+              <Link className='w-full h-full' href="/login">
+                Login
+              </Link>
+          </button>
+          <button className='bg-[#88fcaf] max-[900px]:text-xs hover:bg-transparent motion-safe:transition-ease motion-safe:duration-200 border-[#88fcaf] border hover:p-1.75 hover:text-[#88fcaf] text-[#17181e] py-2 px-4 rounded-md'>
+            <Link className='w-full h-full' href="/signup">
+              Signup
+            </Link>
+          </button>
+        </div>
       </div>
 
     <div
@@ -108,9 +112,17 @@ function Navbar() {
               <AiOutlineClose />
             </div>
           </div>
-          <div className="border-b flex justify-center items-center text-center border-[#88fcaf] mt-6 mb-4 gap-6 px-2 py-4 font-monument ">
-            <button className="hover:text-[#88fcaf] transition duration-100">Sign In</button>
-            <button className='bg-[#88fcaf] text-[#17181e] p-2 rounded-md'>Signup</button>
+          <div className="border-b flex justify-between items-center text-center border-[#88fcaf] mt-6 mb-4 gap-6 px-2 py-4 font-monument ">
+            <button className="hover:text-[#88fcaf] transition duration-100">
+              <Link className='w-full h-full' href="/login">
+                Login
+              </Link>
+            </button>
+            <button className='bg-[#88fcaf] text-[#17181e] p-2 rounded-md'>
+              <Link className='w-full h-full' href="/signup">
+                Signup
+              </Link>
+            </button>
           </div>
           <div className=" flex flex-col justify-center items-center">
             <ul className=" text-[#17181e] text-lg text-center font-monument capitalize">
